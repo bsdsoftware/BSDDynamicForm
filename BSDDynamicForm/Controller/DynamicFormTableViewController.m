@@ -31,8 +31,8 @@
 	FieldModel *modelConferma = [FieldModel new];
 	modelConferma.type = TypeFormFieldConferma;
 	
-	self.fielList = [NSMutableArray new];
-	[self.fielList addObject:modelConferma];
+	self.fieldList = [NSMutableArray new];
+	[self.fieldList addObject:modelConferma];
 	
 	[self.tableView reloadData];
 }
@@ -45,11 +45,11 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.fielList count];
+    return [self.fieldList count];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	FieldModel *model = self.fielList[indexPath.row];
+	FieldModel *model = self.fieldList[indexPath.row];
 	switch (model.type) {
 		case typeFormFieldText: {
 			return 81;
@@ -79,7 +79,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	FieldModel *model = self.fielList[indexPath.row];
+	FieldModel *model = self.fieldList[indexPath.row];
 	UITableViewCell *cell;
 	
 	switch (model.type) {
@@ -133,7 +133,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 	if([segue.identifier isEqualToString:@"segueMultipleChoice"]) {
 		NSIndexPath *selectedIndex = [self.tableView indexPathForSelectedRow];
-		FieldModel *fieldSelected = self.fielList[selectedIndex.row];
+		FieldModel *fieldSelected = self.fieldList[selectedIndex.row];
 		MultipleChoiceViewController *multipleChoiceVC = segue.destinationViewController;
 		MultipleChoiceTableViewCell *cell = [self.tableView cellForRowAtIndexPath:selectedIndex];
 		multipleChoiceVC.delegate = cell;
@@ -153,10 +153,10 @@
 }
 
 - (IBAction)conferma:(id)sender {
-	for (int i = 0; i < (self.fielList.count -1); i++) {
+	for (int i = 0; i < (self.fieldList.count -1); i++) {
 		NSIndexPath *index = [NSIndexPath indexPathForRow:i inSection:0] ;
 		UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:index];
-		FieldModel *model = self.fielList[i];
+		FieldModel *model = self.fieldList[i];
 		if([cell isKindOfClass:[TextTableViewCell class]]){
 			model.selectedAnswers = @[((TextTableViewCell *)cell).txtCampo.text];
 		} else if([cell isKindOfClass:[TextViewTableViewCell class]]) {
@@ -170,7 +170,7 @@
 		}
 	}
 	
-	[self.delegate onFormConfirm:self.fielList];
+	[self.delegate onFormConfirm:self.fieldList];
 }
 
 
