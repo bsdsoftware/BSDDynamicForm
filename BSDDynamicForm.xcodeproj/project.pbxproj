@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		445F787C1BE764BC00D30938 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F787B1BE764BC00D30938 /* main.m */; };
+		445F787F1BE764BC00D30938 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F787E1BE764BC00D30938 /* AppDelegate.m */; };
+		445F78871BE764BC00D30938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445F78861BE764BC00D30938 /* Assets.xcassets */; };
+		445F788A1BE764BC00D30938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445F78881BE764BC00D30938 /* LaunchScreen.storyboard */; };
+		445F78A81BE765D400D30938 /* ConfermaViewTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F78931BE765D400D30938 /* ConfermaViewTableCell.m */; };
+		445F78A91BE765D400D30938 /* MultipleChoiceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F78951BE765D400D30938 /* MultipleChoiceTableViewCell.m */; };
+		445F78AA1BE765D400D30938 /* PickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F78971BE765D400D30938 /* PickerTableViewCell.m */; };
+		445F78AB1BE765D400D30938 /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F78991BE765D400D30938 /* TextTableViewCell.m */; };
+		445F78AC1BE765D400D30938 /* TextViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F789B1BE765D400D30938 /* TextViewTableViewCell.m */; };
+		445F78AD1BE765D400D30938 /* DynamicFormTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F789E1BE765D400D30938 /* DynamicFormTableViewController.m */; };
+		445F78AE1BE765D400D30938 /* MultipleChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F78A01BE765D400D30938 /* MultipleChoiceViewController.m */; };
+		445F78AF1BE765D400D30938 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F78A21BE765D400D30938 /* PickerViewController.m */; };
+		445F78B01BE765D400D30938 /* AnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F78A51BE765D400D30938 /* AnswerModel.m */; };
+		445F78B11BE765D400D30938 /* FieldModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F78A71BE765D400D30938 /* FieldModel.m */; };
+		445F78B41BE765E100D30938 /* Costanti.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F78B31BE765E100D30938 /* Costanti.m */; };
+		445F78B71BE7663500D30938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445F78B51BE7663500D30938 /* Main.storyboard */; };
+		E9D9E5360C7AACFF93F144C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63442FB335FC646C0AEAC386 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		445F78771BE764BC00D30938 /* BSDDynamicForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSDDynamicForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		445F787B1BE764BC00D30938 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		445F787D1BE764BC00D30938 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		445F787E1BE764BC00D30938 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		445F78861BE764BC00D30938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		445F78891BE764BC00D30938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		445F788B1BE764BC00D30938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445F78921BE765D400D30938 /* ConfermaViewTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfermaViewTableCell.h; sourceTree = "<group>"; };
+		445F78931BE765D400D30938 /* ConfermaViewTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfermaViewTableCell.m; sourceTree = "<group>"; };
+		445F78941BE765D400D30938 /* MultipleChoiceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleChoiceTableViewCell.h; sourceTree = "<group>"; };
+		445F78951BE765D400D30938 /* MultipleChoiceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleChoiceTableViewCell.m; sourceTree = "<group>"; };
+		445F78961BE765D400D30938 /* PickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTableViewCell.h; sourceTree = "<group>"; };
+		445F78971BE765D400D30938 /* PickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTableViewCell.m; sourceTree = "<group>"; };
+		445F78981BE765D400D30938 /* TextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTableViewCell.h; sourceTree = "<group>"; };
+		445F78991BE765D400D30938 /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTableViewCell.m; sourceTree = "<group>"; };
+		445F789A1BE765D400D30938 /* TextViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewTableViewCell.h; sourceTree = "<group>"; };
+		445F789B1BE765D400D30938 /* TextViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewTableViewCell.m; sourceTree = "<group>"; };
+		445F789D1BE765D400D30938 /* DynamicFormTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicFormTableViewController.h; sourceTree = "<group>"; };
+		445F789E1BE765D400D30938 /* DynamicFormTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicFormTableViewController.m; sourceTree = "<group>"; };
+		445F789F1BE765D400D30938 /* MultipleChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleChoiceViewController.h; sourceTree = "<group>"; };
+		445F78A01BE765D400D30938 /* MultipleChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleChoiceViewController.m; sourceTree = "<group>"; };
+		445F78A11BE765D400D30938 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		445F78A21BE765D400D30938 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		445F78A41BE765D400D30938 /* AnswerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerModel.h; sourceTree = "<group>"; };
+		445F78A51BE765D400D30938 /* AnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerModel.m; sourceTree = "<group>"; };
+		445F78A61BE765D400D30938 /* FieldModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldModel.h; sourceTree = "<group>"; };
+		445F78A71BE765D400D30938 /* FieldModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldModel.m; sourceTree = "<group>"; };
+		445F78B21BE765E100D30938 /* Costanti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Costanti.h; sourceTree = "<group>"; };
+		445F78B31BE765E100D30938 /* Costanti.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Costanti.m; sourceTree = "<group>"; };
+		445F78B61BE7663500D30938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		465A1D26DE5DB85622C0F61B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		63442FB335FC646C0AEAC386 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		83177FD7E6BCF679E460B2CB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		445F78741BE764BC00D30938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D9E5360C7AACFF93F144C3 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		445F786E1BE764BC00D30938 = {
+			isa = PBXGroup;
+			children = (
+				445F78791BE764BC00D30938 /* BSDDynamicForm */,
+				445F78781BE764BC00D30938 /* Products */,
+				904A4FD32D10F149C98AF2E4 /* Pods */,
+				FCC25C22E321635C899610C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		445F78781BE764BC00D30938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				445F78771BE764BC00D30938 /* BSDDynamicForm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		445F78791BE764BC00D30938 /* BSDDynamicForm */ = {
+			isa = PBXGroup;
+			children = (
+				445F78B21BE765E100D30938 /* Costanti.h */,
+				445F78B31BE765E100D30938 /* Costanti.m */,
+				445F78911BE765D400D30938 /* CellType */,
+				445F789C1BE765D400D30938 /* Controller */,
+				445F78A31BE765D400D30938 /* Models */,
+				445F787D1BE764BC00D30938 /* AppDelegate.h */,
+				445F787E1BE764BC00D30938 /* AppDelegate.m */,
+				445F78861BE764BC00D30938 /* Assets.xcassets */,
+				445F78881BE764BC00D30938 /* LaunchScreen.storyboard */,
+				445F78B51BE7663500D30938 /* Main.storyboard */,
+				445F788B1BE764BC00D30938 /* Info.plist */,
+				445F787A1BE764BC00D30938 /* Supporting Files */,
+			);
+			path = BSDDynamicForm;
+			sourceTree = "<group>";
+		};
+		445F787A1BE764BC00D30938 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				445F787B1BE764BC00D30938 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		445F78911BE765D400D30938 /* CellType */ = {
+			isa = PBXGroup;
+			children = (
+				445F78921BE765D400D30938 /* ConfermaViewTableCell.h */,
+				445F78931BE765D400D30938 /* ConfermaViewTableCell.m */,
+				445F78941BE765D400D30938 /* MultipleChoiceTableViewCell.h */,
+				445F78951BE765D400D30938 /* MultipleChoiceTableViewCell.m */,
+				445F78961BE765D400D30938 /* PickerTableViewCell.h */,
+				445F78971BE765D400D30938 /* PickerTableViewCell.m */,
+				445F78981BE765D400D30938 /* TextTableViewCell.h */,
+				445F78991BE765D400D30938 /* TextTableViewCell.m */,
+				445F789A1BE765D400D30938 /* TextViewTableViewCell.h */,
+				445F789B1BE765D400D30938 /* TextViewTableViewCell.m */,
+			);
+			path = CellType;
+			sourceTree = "<group>";
+		};
+		445F789C1BE765D400D30938 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				445F789D1BE765D400D30938 /* DynamicFormTableViewController.h */,
+				445F789E1BE765D400D30938 /* DynamicFormTableViewController.m */,
+				445F789F1BE765D400D30938 /* MultipleChoiceViewController.h */,
+				445F78A01BE765D400D30938 /* MultipleChoiceViewController.m */,
+				445F78A11BE765D400D30938 /* PickerViewController.h */,
+				445F78A21BE765D400D30938 /* PickerViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		445F78A31BE765D400D30938 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				445F78A41BE765D400D30938 /* AnswerModel.h */,
+				445F78A51BE765D400D30938 /* AnswerModel.m */,
+				445F78A61BE765D400D30938 /* FieldModel.h */,
+				445F78A71BE765D400D30938 /* FieldModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		904A4FD32D10F149C98AF2E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83177FD7E6BCF679E460B2CB /* Pods.debug.xcconfig */,
+				465A1D26DE5DB85622C0F61B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCC25C22E321635C899610C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63442FB335FC646C0AEAC386 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		445F78761BE764BC00D30938 /* BSDDynamicForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445F788E1BE764BC00D30938 /* Build configuration list for PBXNativeTarget "BSDDynamicForm" */;
+			buildPhases = (
+				941777A96541CDC08E244FDB /* Check Pods Manifest.lock */,
+				445F78731BE764BC00D30938 /* Sources */,
+				445F78741BE764BC00D30938 /* Frameworks */,
+				445F78751BE764BC00D30938 /* Resources */,
+				E84B5C9768B969CCE8AC3C11 /* Embed Pods Frameworks */,
+				216C474A885192FCD50814CE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSDDynamicForm;
+			productName = BSDDynamicForm;
+			productReference = 445F78771BE764BC00D30938 /* BSDDynamicForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		445F786F1BE764BC00D30938 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Sama Alessandro";
+				TargetAttributes = {
+					445F78761BE764BC00D30938 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 445F78721BE764BC00D30938 /* Build configuration list for PBXProject "BSDDynamicForm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 445F786E1BE764BC00D30938;
+			productRefGroup = 445F78781BE764BC00D30938 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				445F78761BE764BC00D30938 /* BSDDynamicForm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		445F78751BE764BC00D30938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445F78B71BE7663500D30938 /* Main.storyboard in Resources */,
+				445F788A1BE764BC00D30938 /* LaunchScreen.storyboard in Resources */,
+				445F78871BE764BC00D30938 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		216C474A885192FCD50814CE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		941777A96541CDC08E244FDB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E84B5C9768B969CCE8AC3C11 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		445F78731BE764BC00D30938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445F78AA1BE765D400D30938 /* PickerTableViewCell.m in Sources */,
+				445F78A81BE765D400D30938 /* ConfermaViewTableCell.m in Sources */,
+				445F78AF1BE765D400D30938 /* PickerViewController.m in Sources */,
+				445F787F1BE764BC00D30938 /* AppDelegate.m in Sources */,
+				445F78AC1BE765D400D30938 /* TextViewTableViewCell.m in Sources */,
+				445F78B01BE765D400D30938 /* AnswerModel.m in Sources */,
+				445F78A91BE765D400D30938 /* MultipleChoiceTableViewCell.m in Sources */,
+				445F78AE1BE765D400D30938 /* MultipleChoiceViewController.m in Sources */,
+				445F78B11BE765D400D30938 /* FieldModel.m in Sources */,
+				445F78AB1BE765D400D30938 /* TextTableViewCell.m in Sources */,
+				445F78AD1BE765D400D30938 /* DynamicFormTableViewController.m in Sources */,
+				445F787C1BE764BC00D30938 /* main.m in Sources */,
+				445F78B41BE765E100D30938 /* Costanti.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		445F78881BE764BC00D30938 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				445F78891BE764BC00D30938 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		445F78B51BE7663500D30938 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				445F78B61BE7663500D30938 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		445F788C1BE764BC00D30938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		445F788D1BE764BC00D30938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		445F788F1BE764BC00D30938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83177FD7E6BCF679E460B2CB /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BSDDynamicForm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.bsdsoftware.BSDDynamicForm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		445F78901BE764BC00D30938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465A1D26DE5DB85622C0F61B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BSDDynamicForm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.bsdsoftware.BSDDynamicForm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		445F78721BE764BC00D30938 /* Build configuration list for PBXProject "BSDDynamicForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445F788C1BE764BC00D30938 /* Debug */,
+				445F788D1BE764BC00D30938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		445F788E1BE764BC00D30938 /* Build configuration list for PBXNativeTarget "BSDDynamicForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445F788F1BE764BC00D30938 /* Debug */,
+				445F78901BE764BC00D30938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 445F786F1BE764BC00D30938 /* Project object */;
+}
