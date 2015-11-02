@@ -14,8 +14,9 @@
 
 - (IBAction)annulla:(id)sender;
 - (IBAction)conferma:(id)sender;
-@property(nonatomic,weak)id<DynamicFormProtocol> delegate;
 
+@property(nonatomic,weak)id<DynamicFormProtocol> delegate;
+@property(nonatomic,strong)	NSMutableArray *fielList;
 
 @end
 
