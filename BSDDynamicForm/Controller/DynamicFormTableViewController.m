@@ -35,8 +35,21 @@
 	[self.fieldList addObject:modelConferma];
 	
 	[self.tableView reloadData];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(keyboardWillShow:)
+												 name:UIKeyboardWillShowNotification
+											   object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(keyboardWillHide:)
+												 name:UIKeyboardWillHideNotification
+											   object:nil];
 }
 
+-(void)dealloc {
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 #pragma mark - Table view data source
 
@@ -182,6 +195,24 @@
 -(BOOL)textViewShouldEndEditing:(UITextView *)textView {
 	[textView resignFirstResponder];
 	return YES;
+}
+
+- (void)keyboardWillShow:(NSNotification *)notification {
+	
+	CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+	UIEdgeInsets contentInsets;
+	
+	contentInsets = UIEdgeInsetsMake(0.0, 0.0, (keyboardSize.height), 0.0);
+	
+	self.tableView.contentInset = contentInsets;
+	self.tableView.scrollIndicatorInsets = contentInsets;
+}
+
+
+- (void)keyboardWillHide:(NSNotification *)notification
+{
+	self.tableView.contentInset = UIEdgeInsetsZero;
+	self.tableView.scrollIndicatorInsets = UIEdgeInsetsZero;
 }
 
 @end
